@@ -7,7 +7,7 @@ use App\Filament\Hr\Resources\Payrolls\Pages\EditPayroll;
 use App\Filament\Hr\Resources\Payrolls\Pages\ListPayrolls;
 use App\Filament\Hr\Resources\Payrolls\Schemas\PayrollForm;
 use App\Filament\Hr\Resources\Payrolls\Tables\PayrollsTable;
-use App\Models\hr\Payroll;
+use App\Models\Hr\Payroll;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;

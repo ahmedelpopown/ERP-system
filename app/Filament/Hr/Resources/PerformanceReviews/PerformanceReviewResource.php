@@ -7,7 +7,7 @@ use App\Filament\Hr\Resources\PerformanceReviews\Pages\EditPerformanceReview;
 use App\Filament\Hr\Resources\PerformanceReviews\Pages\ListPerformanceReviews;
 use App\Filament\Hr\Resources\PerformanceReviews\Schemas\PerformanceReviewForm;
 use App\Filament\Hr\Resources\PerformanceReviews\Tables\PerformanceReviewsTable;
-use App\Models\hr\PerformanceReview;
+use App\Models\Hr\PerformanceReview;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;

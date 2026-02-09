@@ -13,7 +13,7 @@ class UsersTable
     public static function configure(Table $table): Table
     {
         return $table
-       ->columns([
+            ->columns([
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('email')

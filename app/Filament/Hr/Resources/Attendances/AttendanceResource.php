@@ -7,7 +7,7 @@ use App\Filament\Hr\Resources\Attendances\Pages\EditAttendance;
 use App\Filament\Hr\Resources\Attendances\Pages\ListAttendances;
 use App\Filament\Hr\Resources\Attendances\Schemas\AttendanceForm;
 use App\Filament\Hr\Resources\Attendances\Tables\AttendancesTable;
-use App\Models\hr\Attendance;
+use App\Models\Hr\Attendance;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -17,8 +17,7 @@ use Filament\Tables\Table;
 class AttendanceResource extends Resource
 {
     protected static ?string $model = Attendance::class;
-
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::Clock;
+     protected static string|BackedEnum|null $navigationIcon = Heroicon::Clock;
 
     public static function form(Schema $schema): Schema
     {

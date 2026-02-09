@@ -31,6 +31,7 @@ class HrPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->login()
+            ->passwordReset()
               ->favicon(asset('images/logo.svg'))
             ->brandLogo(asset('images/logo.svg'))
 

@@ -2,9 +2,9 @@
 
 namespace App\Filament\Hr\Widgets;
 
-use App\Models\hr\Attendance;
-use App\Models\hr\LeaveRequest;
-use App\Models\hr\Payroll;
+use App\Models\Hr\Attendance;
+use App\Models\Hr\LeaveRequest;
+use App\Models\Hr\Payroll;
 use App\Models\User;
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;

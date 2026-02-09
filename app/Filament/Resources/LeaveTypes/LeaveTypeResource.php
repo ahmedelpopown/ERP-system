@@ -7,7 +7,7 @@ use App\Filament\Resources\LeaveTypes\Pages\EditLeaveType;
 use App\Filament\Resources\LeaveTypes\Pages\ListLeaveTypes;
 use App\Filament\Resources\LeaveTypes\Schemas\LeaveTypeForm;
 use App\Filament\Resources\LeaveTypes\Tables\LeaveTypesTable;
-use App\Models\hr\LeaveType;
+use App\Models\Hr\LeaveType;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;

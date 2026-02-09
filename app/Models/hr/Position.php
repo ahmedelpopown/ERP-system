@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models\hr;
+namespace App\Models\Hr;
 
 use App\Models\User;
-use App\Models\hr\Department;
+use App\Models\Hr\Department;
 use Illuminate\Database\Eloquent\Model;
 
 class Position extends Model
