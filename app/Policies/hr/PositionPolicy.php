@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Policies\hr;
+namespace App\Policies\Hr;
 
 use Illuminate\Foundation\Auth\User as AuthUser;
-use App\Models\hr\Position;
+use App\Models\Hr\Position;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PositionPolicy

@@ -3,12 +3,12 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\hr\Attendance;
-use App\Models\hr\Department;
-use App\Models\hr\LeaveRequest;
-use App\Models\hr\Payroll;
-use App\Models\hr\PerformanceReview;
-use App\Models\hr\Position;
+use App\Models\Hr\Attendance;
+use App\Models\Hr\Department;
+use App\Models\Hr\LeaveRequest;
+use App\Models\Hr\Payroll;
+use App\Models\Hr\PerformanceReview;
+use App\Models\Hr\Position;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

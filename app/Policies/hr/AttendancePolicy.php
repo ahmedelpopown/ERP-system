@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Policies\hr;
+namespace App\Policies\Hr;
 
 use Illuminate\Foundation\Auth\User as AuthUser;
-use App\Models\hr\Attendance;
+use App\Models\Hr\Attendance;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class AttendancePolicy

@@ -2,7 +2,7 @@
 
 namespace App\Filament\Hr\Resources\LeaveRequests\Tables;
 
-use App\Models\hr\LeaveRequest;
+use App\Models\Hr\LeaveRequest;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;

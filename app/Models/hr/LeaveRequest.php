@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models\hr;
+namespace App\Models\Hr;
 
 use App\Models\User;
-use App\Models\hr\LeaveType;
+use App\Models\Hr\LeaveType;
 use Illuminate\Database\Eloquent\Model;
 
 class LeaveRequest extends Model

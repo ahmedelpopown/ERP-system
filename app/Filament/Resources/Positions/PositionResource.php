@@ -7,7 +7,7 @@ use App\Filament\Resources\Positions\Pages\EditPosition;
 use App\Filament\Resources\Positions\Pages\ListPositions;
 use App\Filament\Resources\Positions\Schemas\PositionForm;
 use App\Filament\Resources\Positions\Tables\PositionsTable;
-use App\Models\hr\Position;
+use App\Models\Hr\Position;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;

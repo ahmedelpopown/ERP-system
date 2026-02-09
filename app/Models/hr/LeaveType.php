@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models\hr;
+namespace App\Models\Hr;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\hr\LeaveRequest;
+use App\Models\Hr\LeaveRequest;
 class LeaveType extends Model
 {
         protected $fillable = ['name', 'days_per_year', 'is_paid'];

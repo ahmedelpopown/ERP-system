@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Policies\hr;
+namespace App\Policies\Hr;
 
 use Illuminate\Foundation\Auth\User as AuthUser;
-use App\Models\hr\Department;
+use App\Models\Hr\Department;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class DepartmentPolicy

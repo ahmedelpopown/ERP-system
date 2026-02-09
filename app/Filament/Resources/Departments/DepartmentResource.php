@@ -8,7 +8,7 @@ use App\Filament\Resources\Departments\Pages\ListDepartments;
 use App\Filament\Resources\Departments\Schemas\DepartmentForm;
 
 use App\Filament\Resources\Departments\Tables\DepartmentsTable;
-use App\Models\hr\Department;
+use App\Models\Hr\Department;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;

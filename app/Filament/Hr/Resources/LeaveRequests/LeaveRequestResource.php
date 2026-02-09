@@ -7,7 +7,7 @@ use App\Filament\Hr\Resources\LeaveRequests\Pages\EditLeaveRequest;
 use App\Filament\Hr\Resources\LeaveRequests\Pages\ListLeaveRequests;
 use App\Filament\Hr\Resources\LeaveRequests\Schemas\LeaveRequestForm;
 use App\Filament\Hr\Resources\LeaveRequests\Tables\LeaveRequestsTable;
-use App\Models\hr\LeaveRequest;
+use App\Models\Hr\LeaveRequest;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
