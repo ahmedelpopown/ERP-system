@@ -11,21 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-         Schema::create('departments', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->foreignId('manager_id')->nullable()->constrained('users');
-            $table->timestamps();
+        Schema::table('pricing', function (Blueprint $table) {
+            $table->string('name')->after('id');
         });
     }
 
-    
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('departments');
+        Schema::table('pricing', function (Blueprint $table) {
+            //
+        });
     }
 };

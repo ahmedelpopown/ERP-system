@@ -11,21 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-         Schema::create('departments', function (Blueprint $table) {
+        Schema::create('purchases', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->foreignId('manager_id')->nullable()->constrained('users');
+            $table->foreignId('supplier_id')
+                ->constrained('suppliers')
+                ->cascadeOnDelete();
+            $table->date('purchase_date');
+            $table->decimal('total', 10, 2);
             $table->timestamps();
         });
     }
 
-    
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('departments');
+        Schema::dropIfExists('purchases');
     }
 };
