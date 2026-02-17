@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('supplier_id')
-                ->constrained('suppliers')
-                ->cascadeOnDelete();
+            $table->foreignId('supplier_id')->constrained('suppliers')->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->date('purchase_date');
+            $table->json('invoice_image')->nullable();
             $table->decimal('total', 10, 2);
             $table->timestamps();
         });

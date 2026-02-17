@@ -14,13 +14,15 @@ return new class extends Migration
         Schema::create('materials', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('unit');
+      
+          
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     * 
      */
     public function down(): void
     {

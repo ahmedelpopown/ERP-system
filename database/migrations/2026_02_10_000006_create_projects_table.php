@@ -21,12 +21,8 @@ return new class extends Migration
             $table->integer('duration');
             $table->date('start_at');
             $table->date('end_at');
-            $table->foreignId('client_id')
-                ->constrained('clients')
-                ->cascadeOnDelete();
-            $table->foreignId('pricing_id')
-                ->constrained('pricing')
-                ->cascadeOnDelete();
+            $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->foreignId('pricing_id')->constrained('pricing')->cascadeOnDelete();
             $table->timestamps();
         });
     }

@@ -13,7 +13,9 @@ class Purchase extends Model
 
     protected $fillable = [
         'supplier_id',
+        'user_id',
         'purchase_date',
+        'invoice_image',
         'total',
     ];
 
@@ -28,11 +30,15 @@ class Purchase extends Model
     {
         return $this->belongsTo(Supplier::class);
     }
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     /**
      * Get all items in this purchase.
      */
-    public function purchaseItems(): HasMany
+    public function items(): HasMany
     {
         return $this->hasMany(PurchaseItem::class);
     }

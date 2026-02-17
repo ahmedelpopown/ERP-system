@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
+            ->collapsibleNavigationGroups()
             ->path('admin')
             ->passwordReset()
             ->login()
@@ -58,7 +59,7 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])->plugins([
-                FilamentShieldPlugin::make()
-            ]);
+                    FilamentShieldPlugin::make()
+                ]);
     }
 }

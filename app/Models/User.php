@@ -10,6 +10,7 @@ use App\Models\Hr\Payroll;
 use App\Models\Hr\PerformanceReview;
 use App\Models\Hr\Position;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
@@ -96,6 +97,10 @@ class User extends Authenticatable
     public function performanceReviews()
     {
         return $this->hasMany(PerformanceReview::class);   // performanceReviews Well Be = M , and user :1 relations is (M : 1)
+    }
+    public function purchase(): HasMany
+    {
+        return $this->hasMany(Purchase::class);   // performanceReviews Well Be = M , and user :1 relations is (M : 1)
     }
 
     // Events

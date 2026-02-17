@@ -10,10 +10,11 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {
+    { 
         Schema::table('projects', function (Blueprint $table) {
-            $table->foreignId('city_id')->constrained('cities')->cascadeOnDelete();
+            $table->bigInteger('city_id')->unsigned()->notNull();
         });
+    
     }
 
     /**
@@ -22,7 +23,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('projects', function (Blueprint $table) {
-            //
+               $table->dropColumn(['city_id']);
         });
     }
 };

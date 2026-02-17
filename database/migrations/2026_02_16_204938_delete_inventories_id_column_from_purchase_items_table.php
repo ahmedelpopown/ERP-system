@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cities', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
-        });
+       Schema::table('purchase_items', function (Blueprint $table) {
+$table->dropColumn('inventories_id');
+// العمود نفسه
+});
+      
     }
 
     /**
@@ -23,6 +23,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cities');
+        Schema::table('purchase_items', function (Blueprint $table) {
+            // $table->foreignId('inventories_id')->constrained('inventories')->cascadeOnDelete();
+            
+        });
     }
 };

@@ -14,6 +14,7 @@ class Material extends Model
     protected $fillable = [
         'name',
         'unit',
+        'min_stock',
     ];
 
     /**
@@ -32,7 +33,7 @@ class Material extends Model
     /**
      * Get all purchase items for this material.
      */
-    public function purchaseItems(): HasMany
+    public function items(): HasMany
     {
         return $this->hasMany(PurchaseItem::class);
     }

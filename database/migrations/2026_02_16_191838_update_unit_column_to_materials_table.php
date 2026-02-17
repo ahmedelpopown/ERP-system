@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('projects', function (Blueprint $table) {
-            //
+        
+        Schema::table('materials', function (Blueprint $table) {
+               $table->enum('unit',['kg','piece','meter']);
+               
         });
+        
     }
 
     /**
@@ -21,8 +24,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('projects', function (Blueprint $table) {
-            //
-        });
+   Schema::table('materials', function (Blueprint $table) {
+        // الرجوع للحالة القديمة (string) لو حبيت تعمل rollback
+        $table->string('unit')->change();
+    });
     }
 };
